@@ -14,7 +14,7 @@ const btn1 = document.querySelector("#btn1");
 const btn2 = document.querySelector("#btn2");
 const btn3 = document.querySelector("#btn3");
 btn1.addEventListener("click", generateKeypair);
-btn2.addEventListener("click", main);
+btn2.addEventListener("click", connectPhantom);
 btn3.addEventListener("click", sendIt);
 let connection;
 let privateKey;
@@ -90,7 +90,7 @@ async function sendSol() {
   }
 }
 
-function main() {
+function connectPhantom() {
   connectWallet();
 }
 function sendIt() {
